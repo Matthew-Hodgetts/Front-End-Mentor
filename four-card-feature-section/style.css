@@ -1,0 +1,157 @@
+/* Variables */
+/* Helpers */
+.text-center {
+  text-align: center;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+/* Rest ... */
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-section {
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #4c4e61;
+}
+
+.section-lead {
+  color: #a3a5ae;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 7px;
+  border-top: 5px solid #363636;
+  padding: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1px 6px 12px #d6dfe8;
+          box-shadow: 1px 6px 12px #d6dfe8;
+}
+
+.card h3,
+.card p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #4c4e61;
+  font-size: 18px;
+}
+
+.card p {
+  color: #a3a5ae;
+  line-height: 25px;
+}
+
+.card img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card--red {
+  border-top-color: #ea5353;
+}
+
+.card--green {
+  border-top-color: #45d3d3;
+}
+
+.card--orange {
+  border-top-color: #fcaf4a;
+}
+
+.card--blue {
+  border-top-color: #549ef2;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media only screen and (min-width: 375px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .column {
+    margin: 15px;
+  }
+  .section-title {
+    font-size: 36px;
+  }
+  .section-title,
+  .section-lead {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
