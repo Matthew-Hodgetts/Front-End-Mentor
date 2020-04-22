@@ -1,0 +1,140 @@
+/* Variables */
+/* Helpers */
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-500 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 700;
+}
+
+body {
+  background-color: #ff7a7a;
+  background-image: url("./images/bg-intro-mobile.png");
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 5rem 2rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.section-intro {
+  color: #fff;
+}
+
+.selling-notice {
+  background-color: #6055a5;
+  color: #fff;
+  padding: 14px;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+#signUp {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+#signUp input,
+#signUp button {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#signUp input[type="text"],
+#signUp input[type="password"] {
+  border: 1px solid #cecece;
+  color: #3e3c49;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#signUp input[type="text"]:focus,
+#signUp input[type="password"]:focus {
+  outline: none;
+  border-color: #6055a5;
+}
+
+#signUp input[type="text"].error,
+#signUp input[type="password"].error {
+  border-color: #ff7a7a;
+}
+
+#signUp button {
+  padding: 10px;
+  background-color: #38cc8c;
+  color: #fff;
+  border-color: #38cc8c;
+  border-style: solid;
+  border-bottom: 3px solid #2ba671;
+}
+
+#signUp .error-notice {
+  color: #ff7a7a;
+  font-size: 10px;
+  text-align: right;
+  margin: 0;
+  padding: 5px 0;
+  font-style: italic;
+}
+
+.form-group {
+  position: relative;
+}
+
+.error-wrap {
+  display: none;
+}
+
+.error-wrap img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.form-terms {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.term-highlight {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+}
+/*# sourceMappingURL=style.css.map */

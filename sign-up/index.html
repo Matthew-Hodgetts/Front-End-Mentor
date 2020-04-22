@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-left">
+            <h1 class="section-title">Learn to code by watching others</h1>
+            <p class="section-intro">
+              See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is
+              invaluable.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="selling-notice"><span class="fw-500">Try it free 7 days</span> then $20/mo. thereafter</div>
+            <form id="signUp">
+              <div class="form-group">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required />
+              </div>
+              <div class="form-group">
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required />
+              </div>
+              <div class="form-group">
+                <input type="text" name="email" id="email" placeholder="Email Address" required />
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" id="password" placeholder="Password" required />
+              </div>
+              <div class="form-group">
+                <button type="submit">CLAIM YOUR FREE TRIAL</button>
+              </div>
+              <p class="form-terms">By clicking the button, you are agreeing to our <span class="term-highlight">Terms and Services</span></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
