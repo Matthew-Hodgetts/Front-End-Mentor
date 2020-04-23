@@ -1,0 +1,282 @@
+/* Colours */
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+html,
+body,
+p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #fafafa;
+}
+
+.footer-title {
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-nav ul li a {
+  color: #2d2640;
+  font-weight: 600;
+}
+
+.footer-col-1 .footer-title {
+  border-top: 1px solid #837d87;
+}
+
+@media only screen and (min-width: 576px) {
+  .footer__top {
+    border-bottom: 1px solid #837d87;
+  }
+  .footer-col-1 .footer-title {
+    border-top: none;
+  }
+}
+
+.cta {
+  background-color: #2d2640;
+}
+
+.cta__title {
+  color: #fff;
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cta .col-lg-6 {
+    padding: 0 4rem;
+  }
+}
+
+.services .section-title {
+  font-size: 42px;
+}
+
+.services .section-title::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 1px;
+  background-color: #95a9c6;
+  position: relative;
+  margin: 0 auto 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .services .section-title {
+    font-size: 48px;
+  }
+  .services .section-title::before {
+    margin: 0 0 50px;
+  }
+}
+
+.hero {
+  background-color: #2d2640;
+  padding: 0 0 5rem;
+  color: #fff;
+  margin-bottom: 150px;
+}
+
+.hero-img-mobile {
+  width: 100%;
+  height: auto;
+}
+
+.hero-title {
+  font-size: 48px;
+}
+
+.hero-title::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 1px;
+  background-color: #fafafa;
+  position: relative;
+  margin: 0 0 70px;
+  visibility: hidden;
+}
+
+.hero-content {
+  color: #fafafa;
+}
+
+.hero-img-desktop {
+  max-width: 100%;
+  position: relative;
+  z-index: 10;
+  -webkit-transform: translateY(130px);
+          transform: translateY(130px);
+}
+
+@media only screen and (min-width: 576px) {
+  .hero-title {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 5rem;
+  }
+  .hero-title {
+    margin-top: 130px;
+  }
+  .hero-title::before {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 1068px) {
+  .hero {
+    padding-bottom: 1rem;
+  }
+  .hero-title {
+    font-size: 72px;
+  }
+}
+
+.button {
+  padding: 10px 28px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button--transparent {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+
+.button--transparent:hover {
+  color: #2d2640;
+  background-color: #fafafa;
+}
+
+.button--white {
+  color: #2b272f !important;
+  border-color: #2b272f;
+}
+
+.button--white:hover {
+  background-color: #2b272f;
+  color: #fff !important;
+}
+
+.button--violet {
+  color: #fff !important;
+  border-color: #fff;
+  background-color: #2d2640;
+}
+
+.button--violet:hover {
+  background-color: #fff;
+  color: #2d2640 !important;
+}
+
+.navbar-nav .nav-item a {
+  color: #837d87;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  will-change: color;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #2b272f;
+}
+
+.navbar-nav .button {
+  margin-left: 1rem;
+}
+
+.navbar-toggler img {
+  display: none;
+}
+
+.navbar-toggler img.active {
+  display: block;
+}
+
+nav.mobile {
+  display: none;
+  background-color: #2d2640;
+  position: relative;
+}
+
+nav.mobile.active {
+  display: block;
+  min-height: 100vh;
+}
+
+nav.mobile .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+nav.mobile .navbar-nav li {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav.mobile .navbar-nav .button {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+nav.mobile .nav-item a {
+  text-align: center;
+  color: #fff;
+}
+
+nav.mobile .nav-item a:hover {
+  color: #fafafa;
+}
+
+nav.mobile::after {
+  display: block;
+  content: "";
+  height: 55%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("./images/bg-pattern-mobile-nav.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

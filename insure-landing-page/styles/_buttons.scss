@@ -1,0 +1,40 @@
+.button {
+  padding: 10px 28px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-width: 2px;
+  border-style: solid;
+  &:hover {
+    text-decoration: none;
+  }
+  &--transparent {
+    color: $very-light-gray;
+    border-color: $very-light-gray;
+    &:hover {
+      color: $dark-violet;
+      background-color: $very-light-gray;
+    }
+  }
+
+  &--white {
+    color: $very-dark-violet !important;
+    border-color: $very-dark-violet;
+
+    &:hover {
+      background-color: $very-dark-violet;
+      color: #fff !important;
+    }
+  }
+
+  &--violet {
+    color: #fff !important;
+    border-color: #fff;
+    background-color: $dark-violet;
+
+    &:hover {
+      background-color: #fff;
+      color: $dark-violet !important;
+    }
+  }
+}

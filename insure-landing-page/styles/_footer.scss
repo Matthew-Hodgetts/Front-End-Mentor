@@ -1,0 +1,40 @@
+.footer {
+  background-color: $very-light-gray;
+}
+
+.footer-title {
+  font-family: "Karla", sans-serif;
+  color: $dark-grayish-violet;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      a {
+        color: $dark-violet;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.footer-col-1 {
+  .footer-title {
+    border-top: 1px solid $dark-grayish-violet;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .footer__top {
+    border-bottom: 1px solid $dark-grayish-violet;
+  }
+  .footer-col-1 {
+    .footer-title {
+      border-top: none;
+    }
+  }
+}
