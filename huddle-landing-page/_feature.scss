@@ -1,5 +1,7 @@
 .feature {
   padding: 1rem 0;
+  padding-left: 15px;
+  padding-right: 15px;
 
   .container {
     border-radius: 20px;
@@ -10,4 +12,9 @@
 
 .feature__content {
   color: $grayish-blue;
+}
+
+.feature__title {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
 }

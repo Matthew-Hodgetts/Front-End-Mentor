@@ -3,14 +3,33 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  padding: 6rem 0;
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
     background-image: url('./images/bg-hero-desktop.svg');
+  }
+}
+
+.hero__button {
+  background-color: $pink;
+  padding: 18px 40px;
+  color: #fff;
+  border-radius: 50px;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  font-weight: 700;
+
+  font-size: 15px;
+  &:hover {
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
   }
 }
