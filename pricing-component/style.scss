@@ -1,0 +1,253 @@
+/* Colours */
+
+$color1: hsl(240, 78%, 98%);
+$color2: hsl(234, 14%, 74%);
+$color3: hsl(233, 13%, 49%);
+$color4: hsl(232, 13%, 33%);
+$gradient: hsl(236, 72%, 79%), hsl(237, 63%, 64%);
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.pricing {
+  position: relative;
+  background-color: $color1;
+  min-height: 100vh;
+  padding: 2rem;
+  &--annually {
+    .pricing__price {
+      display: block;
+      &--monthly {
+        display: none;
+      }
+    }
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    content: '';
+    display: inline-block;
+  }
+  &:before {
+    background-image: url('./images/bg-bottom.svg');
+    bottom: 0;
+    left: 0;
+    right: 30%;
+    top: 50%;
+  }
+  &:after {
+    background-image: url('./images/bg-top.svg');
+    top: 0;
+    right: 0;
+    left: 60%;
+    bottom: 50%;
+  }
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  color: $color3;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  h5 {
+    padding: 0 1rem;
+    color: $color3;
+  }
+  label {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.pricing-table__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.pricing__table {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin: 2rem 0 0;
+  &--recommened {
+    background: linear-gradient(125deg, $gradient);
+    .pricing__package,
+    .pricing__price,
+    .pricing__feature {
+      color: #fff;
+    }
+    .pricing__button {
+      background: #fff;
+      color: hsl(237, 63%, 64%);
+      &:hover {
+        border-color: #fff;
+        color: #fff;
+      }
+    }
+  }
+}
+.pricing__features {
+  list-style: none;
+  padding: 0;
+}
+.pricing__package {
+  color: $color3;
+}
+.pricing__price {
+  font-size: 5rem;
+  color: $color4;
+  display: inline-block;
+  margin-bottom: 1rem;
+  &--annually {
+    display: none;
+  }
+}
+
+.pricing__feature {
+  &:first-child {
+    border-top: 1px solid $color2;
+  }
+  border-bottom: 1px solid $color2;
+  padding: 1.25rem;
+  color: $color3;
+}
+
+.pricing__button {
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1.25rem;
+  margin-top: 2rem;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  &:hover {
+    background: transparent;
+    border-color: hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .pricing-table__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pricing__table {
+    flex-basis: 30%;
+  }
+  .pricing__price {
+    font-size: 3rem;
+  }
+  .pricing__button {
+    font-size: 12px;
+  }
+  .pricing__table--recommened {
+    transform: scale(1.05);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__price {
+    font-size: 4rem;
+  }
+  .pricing__table {
+    padding: 3rem;
+  }
+
+  .pricing__table--recommened {
+    transform: scale(1.1);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .pricing__price {
+    font-size: 5rem;
+  }
+}
+
+/* Taken from w3schools */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(125deg, $gradient);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(125deg, $gradient);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
