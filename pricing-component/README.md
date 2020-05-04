@@ -1,5 +1,9 @@
 # Frontend Mentor - File Transfer pricing component
 
+## Link to demo
+
+[Demo](https://matthew-hodgetts.github.io/Front-End-Mentor/pricing-component/)
+
 ![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋

@@ -2,6 +2,8 @@
 
 ## Link to live demo
 
+[Demo](https://matthew-hodgetts.github.io/Front-End-Mentor/four-card-feature-section/)
+
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
